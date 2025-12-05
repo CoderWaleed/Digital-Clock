@@ -1,0 +1,63 @@
+body {
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    scrollbar-width: none;
+    transition: background-color  1s ease;
+}  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+h1 {
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 80px;  
+}
+
+h1::selection {
+    background-color: rgba(192, 207, 216, 0.374);
+    color: black;
+    box-shadow: 1px 5px 25px rgb(180, 197, 198);
+}
+
+
+#clock {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    margin-top: 0px;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+
+#date, #day {
+    font-size: 72px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    #clock {
+        font-size: 40px;
+    }
+
+    #date, #day {
+        font-size: 36px;
+    }
+}
